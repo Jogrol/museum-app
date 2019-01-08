@@ -1,5 +1,5 @@
 body {
-    background-color:blue;
+    background: darkcyan;
     font-family: 'Inconsolata', monospace;
     text-align: center;
     margin: 0;
@@ -39,4 +39,8 @@ main {
     max-width: 80%;
     max-height: 20rem;
     margin: 1rem;
+  }
+
+  .albumCover:hover{
+    transform: scale(1.2);
   }
