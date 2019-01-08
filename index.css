@@ -22,9 +22,7 @@ main {
     color: whitesmoke;
     border-style: solid;
     border-radius: 5%;
-    height: 2.5rem;
-    position: relative;
-    text-align: center;
+    height: 5%;
     padding: 1rem;
     background-color: darkcyan;
   } 
