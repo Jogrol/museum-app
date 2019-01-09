@@ -5,6 +5,7 @@ body {
     background: darkcyan;
     font-family: 'Inconsolata', monospace;
     text-align: center;
+    border-radius: 5%
   }
   
   main {
@@ -13,10 +14,17 @@ body {
     margin: auto;
     border-radius: 5px;
     padding: 2rem 0;
+    border-radius: 2%
   }
   
   h1 {
     margin: 5rem 1rem;
+    color: whitesmoke;
+    border-style: solid;
+    border-radius: 5%;
+    height: 8%;
+    padding: 2rem;
+    background-color: darkcyan;
   }
   
   h2 {
@@ -36,12 +44,18 @@ body {
     max-width: 50%;
     min-width: 15rem;
   }
-  
+
+  #information {
+    margin: 1rem auto;
+    border-radius: 5px;
+    max-width: 70%;
+    min-width: 15rem;
+  }
+
   form {
     margin: 2rem auto;
     width: 50%;
     min-width: 15rem;
-  
     padding: 1rem;
     border: 1px solid #CCC;
     border-radius: 5px;
@@ -67,6 +81,7 @@ body {
   
   input:focus, textarea:focus {
     border-color: #000;
+    border-radius: 2%
   }
   
   textarea {
@@ -102,4 +117,14 @@ body {
   a {
       color: black;
       text-decoration: none;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .flexbox {
+      margin: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+    }
   }
