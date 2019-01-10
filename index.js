@@ -351,9 +351,14 @@ for (i = 0; i < paintings.length; i++) {
 
     const currentPainting = paintings[i];
 
-    displayPainting(currentPainting);
+    const MAX_WIDTH_IN_PIXELS = 2200;
+    const PAINTER_NOT_WELCOME = "Honthorst"
 
+    if (currentPainting.webImage.width < MAX_WIDTH_IN_PIXELS 
+        || currentPainting.principalOrFirstMaker.includes(PAINTER_NOT_WELCOME)){
+        console.log(`${currentPainting} dit not passed`)
+    } else {
+        displayPainting(currentPainting);
+    }
+    
 }
-
-
-
