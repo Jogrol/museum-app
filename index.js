@@ -326,12 +326,10 @@ const data = {
 
 const paintings = data.artObjects;
 
-
-for (i = 0; i < paintings.length; i++) { 
-    
-    // Gather the required data
-    const title = paintings[i].title;
-    const img = paintings[i].webImage.url;
+function displayPainting (painting) {
+     // Gather the required data
+    const title = painting.title;
+    const img = painting.webImage.url;
 
     // Create the elements you need
     const elementA = document.createElement('a');
@@ -347,7 +345,15 @@ for (i = 0; i < paintings.length; i++) {
     // Display them on the page
     const gallerySection = document.getElementById('gallery');
     gallerySection.appendChild(elementA);
+}
+
+for (i = 0; i < paintings.length; i++) { 
+
+    const currentPainting = paintings[i];
+
+    displayPainting(currentPainting);
 
 }
+
 
 
